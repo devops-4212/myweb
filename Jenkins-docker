@@ -24,7 +24,7 @@ pipeline{
             steps{
                  sh 'docker build -t sandeep9959/spring-boot-mongo .'
                  sh 'docker build -t tomcat:${BUILD_NUMBER} .'
-                 sh 'docker run -itd --name srini6 -p 3900:8080 tomcat:${BUILD_NUMBER}'
+                 sh 'docker run -itd --name srini21 -p 3910:8080 tomcat:${BUILD_NUMBER}'
              }
          }
         stage('Push Docker Image'){
